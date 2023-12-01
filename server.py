@@ -119,5 +119,5 @@ def generate_summary():
     # 将结果作为JSON返回
     return jsonify(summary_result)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
