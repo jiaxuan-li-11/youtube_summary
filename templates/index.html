@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic YouTube Video Embed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='image/logo.png') }}" alt="Butterfly Logo" class="logo">
+                <span class="logo-text">QuickClip</span>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/notes">My Notes</a></li>
+                    <li><a href="/products">Products</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <button class="btn" id="login">LOGIN</button>
+                <button class="btn" id="signup">SIGN UP</button>
+            </div>
+        </div>
+    </header>
+
+    <!--videoID input-->
+    <div id="video-input-form">
+        <input type="text" id="video-id" placeholder="SEkGLj0bwAU">
+        <button id="submit-button">Load Video</button>
+    </div>
+
+    <div class="column">
+        <p id="video-placeholder" style="display: none;">Enter Video ID to Start</p>
+        <div id="youtube-player" style="display: none;"></div>
+        <input type="text" id="summary-req" placeholder="Summary instruction" style="display: none;">
+        <button id="generate-summary" style="display: none;">Generate Summary</button>
+    </div>
+
+    <div class="column">
+        <div id="summary-result">
+            <!-- <div id="loading-icon" style="display: none;">
+                这里可以是一个旋转的加载图标或者任何其他的加载指示 -->
+                <!-- <img src="{{ url_for('static', filename='image/loading.gif') }}" alt="Loading..." /> -->
+            <!-- </div> -->
+            <!-- <p id="test">where</p> -->
+        </div>
+    </div>
+
+
+    <!-- <div id="time-jump-buttons">
+        <button class="jump-btn" data-time="10">Jump to 10s</button>
+        <button class="jump-btn" data-time="30">Jump to 30s</button>
+        <button class="jump-btn" data-time="60">Jump to 1min</button>
+    </div> -->
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

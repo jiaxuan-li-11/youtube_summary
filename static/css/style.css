@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 垂直居中 */
+}
+
+.logo {
+    /* 调整 logo 图片的大小，确保它不会太大或太小 */
+    height: 50px; /* 或者您需要的任何尺寸 */
+    margin-right: 10px; /* 在图片和文字之间提供一些空间 */
+}
+
+.logo-text {
+    /* 根据需要调整文字样式 */
+    font-size: 20px; /* 示例文本大小 */
+    font-weight: bold; /* 如果您想要粗体文本 */
+    /* 其他可能的样式 */
+}
+
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn#login {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(250, 172, 105);
+}
+
+/* .btn#login {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+} */
+
+.btn#signup {
+    background: transparent; /* 无背景色 */
+    border: none; /* 无边框 */
+    outline: none; /* 点击时无轮廓 */
+    /* 其他样式 */
+    color: #333;
+    cursor: pointer;
+}
+
+#video-input-form {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Style the input field */
+#video-id {
+    margin-right: auto;
+    display: flex;
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 2px solid #FFA500; /* Assuming orange border like in the image */
+    border-right: 2px; /* Remove right border to make it blend with the button */
+    border-radius: 25px 0 0 25px; /* Rounded corners on the left side */
+    outline: none; /* Removes the default focus outline */
+}
+
+
+/* Style the button */
+#submit-button {
+    padding: 10px 20px;
+    background-color: #FFA500; /* Assuming orange background like in the image */
+    border: 2px solid #FFA500;
+    border-radius: 0 25px 25px 0; /* Rounded corners on the right side */
+    cursor: pointer;
+    outline: none; /* Removes the default focus outline */
+}
+
+/* Additional hover effect for the button */
+#submit-button:hover {
+    background-color: #e69500; /* A slightly darker orange */
+}
+
+/* Ensures the button text doesn't get selected */
+#submit-button {
+    user-select: none;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+}
+/* 列后清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#summary-result {
+    /* flex: 1; */ /* 如果您想让摘要结果区域更窄可以使用这个 */
+    /* 设置内边距或外边距 */
+    /* 移除或调整margin-left为适当的值 */
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 150px;
+    font-family: Calibri;
+    /* width: 560px;
+    height: 800px;b
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
+
+
+
+#video-placeholder {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    width: 650px;
+    height: 420px;
+    line-height: 420px; /* 垂直居中文本 */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#youtube-player {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    width: 650px;
+    height: 420px;
+    line-height: 315px; /* 垂直居中文本 */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#summary-req {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    max-width: 30%;
+    display: flex;
+    padding: 10px 100px;
+    border: 2px solid #b5a8f0; /* Assuming orange border like in the image */
+    border-radius: 25px; /* Rounded corners on the left side */
+}
+
+#generate-summary {
+    padding: 10px 20px;
+    margin-left: 100px;
+    background-color: #f2b645; /* Assuming orange background like in the image */
+    border: 2px #f2b645;
+    border-radius: 25px; /* Rounded corners on the right side */
+    cursor: pointer;
+    outline: none; /* Removes the default focus outline */
+}
+
+#loading-icon {
+    display: none; /* 初始设置为不显示 */
+    max-width: 20%; /* 图片最大宽度为容器的25% */
+    height: 10px; /* 保持图片的宽高比 */
+    position: absolute; /* 绝对定位 */
+}
+
+.summary-item {
+    margin-bottom: 20px;
+}
+
+.timestamp {
+    color: #00f;
+    cursor: pointer;
+}
+
+.summary-text {
+    margin: 0;
+}

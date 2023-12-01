@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Onboarding</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
+</head>
+<body>
+    <!-- <div class="onboarding-container">
+        <h1>欢迎来到我的项目</h1>
+        <p>这里是关于项目的一些介绍...</p>
+        <a href="/summary">
+            <button>Go to Onbo</button>
+        </a>
+    </div> -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='image/logo.png') }}" alt="Butterfly Logo" class="logo">
+                <span class="logo-text">QuickClip</span>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/notes">My Notes</a></li>
+                    <li><a href="/products">Products</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <button class="btn" id="login">LOGIN</button>
+                <button class="btn" id="signup">SIGN UP</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="highlight-area">
+        <div class="content">
+            <h1>YouTube Video Summary</h1>
+            <p>Save time when searching contents in videos</p>
+            <a href="/summary" class="cta-button">STARTED FREE</a>
+        </div>
+        <img src="{{ url_for('static', filename='image/hero.png') }}" alt="PHOTO" class="highlight-image">
+    </div>
+
+    
+    <div class="resource-container">
+        <div class="resource">
+          <h2>Quick Learn</h2>
+          <p>It is easy to locate key information, help you filter out words without information, save learning time and improve learning efficiency.</p>
+        </div>
+        <div class="resource">
+          <h2>Video Q&A</h2>
+          <p>Can’t understand the content? We provide intelligent question and answer robots to solve all your doubts based on video content.</p>
+        </div>
+        <div class="resource">
+          <h2>Note Taken</h2>
+          <p>Automatically generate notes for the selected information to facilitate subsequent review,also allow edition.</p>
+        </div>
+    </div>      
+
+
+
+    <div class="centered-text">
+        <h2 class="heading">Who we are?</h2>
+        <p class="content">
+            QuickClip Summarizer is a cutting-edge web tool designed to transform the way we consume video content. In today's fast-paced world, finding time to watch lengthy YouTube videos can be a challenge. Our tool addresses this by providing concise, accurate summaries of YouTube videos, allowing users to quickly grasp the essence of the content without spending hours watching.
+        </p>
+    </div>
+    
+    <div class="centered-text2">
+        <h2 class="heading">Why we do this?</h2>
+        <p class="content">
+            We created QuickClip Summarizer to cater to professionals, students, and curious minds who crave knowledge but are constrained by time. Whether you're looking to quickly catch up on educational material, stay informed with the latest tutorials, or simply save time, our tool streamlines your learning process. With just a few clicks, you can unlock the core insights of any YouTube video, enhancing your productivity and learning efficiency.
+        </p>
+    </div>
+
+</body>
+</html>

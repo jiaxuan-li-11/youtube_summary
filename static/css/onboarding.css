@@ -1,0 +1,228 @@
+/* css/onboarding.css */
+/* .onboarding-container {
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.onboarding-container h1 {
+    margin-bottom: 20px;
+}
+
+.onboarding-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.onboarding-container button:hover {
+    background-color: #0056b3;
+} */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 垂直居中 */
+}
+
+.logo {
+    /* 调整 logo 图片的大小，确保它不会太大或太小 */
+    height: 50px; /* 或者您需要的任何尺寸 */
+    margin-right: 10px; /* 在图片和文字之间提供一些空间 */
+}
+
+.logo-text {
+    /* 根据需要调整文字样式 */
+    font-size: 20px; /* 示例文本大小 */
+    font-weight: bold; /* 如果您想要粗体文本 */
+    /* 其他可能的样式 */
+}
+
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn#login {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(250, 172, 105);
+}
+
+/* .btn#login {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+} */
+
+.btn#signup {
+    background: transparent; /* 无背景色 */
+    border: none; /* 无边框 */
+    outline: none; /* 点击时无轮廓 */
+    /* 其他样式 */
+    color: #333;
+    cursor: pointer;
+}
+
+.highlight-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(226, 197, 235); /* 或者您选择的颜色 */
+    padding: 10px; /* 或根据设计调整 */
+    min-height: 500px;
+    position: relative; /* 为了绝对定位图片 */
+    margin-bottom: 50px;
+}
+
+.content h1 {
+    font-size: 3em; /* 调整为适当的大小 */
+    /* padding: 10px; */
+    color: #000; /* 文本颜色 */
+    margin-left: 140px;
+    margin-bottom: 10px; 
+}
+
+.content p {
+    font-size: 1em;
+    color: #7c7a7a; /* 文本颜色 */
+    margin-top: 10px;
+    margin-bottom: 60px; /* 间距 */
+    margin-left:140px;
+}
+
+.cta-button {
+    padding: 20px 35px;
+    background-color: rgb(250, 172, 105);/*景颜色 */
+    color: #fff; /* 按钮文字颜色 */
+    text-decoration: none; /* 移除下划线 */
+    border-radius: 5px; /* 圆角边框 */
+    transition: background-color 0.3s; /* 过渡效果 */
+    margin-left:140px;
+}
+
+.cta-button:hover {
+    background-color: #f77f2a; /* 鼠标悬停时的背景颜色 */
+}
+
+
+.highlight-image {
+    max-width: 35%; /* 图片最大宽度为容器的25% */
+    height: auto; /* 保持图片的宽高比 */
+    position: absolute; /* 绝对定位 */
+    right: 100px; /* 距离容器右侧的距离 */
+    top: 50%; /* 顶部定位到容器的50% */
+    transform: translateY(-50%); /* 向上偏移自身高度的50%，以确保垂直居中 */
+}
+
+
+.resource-container {
+    display: flex; /* 使用flex布局 */
+    justify-content: space-between; /* 子元素之间平均分配空间 */
+    padding: 20px; /* 根据需要，可以调整padding来给容器添加一些空间 */
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    font-family: Calibri;
+    font-size: 1em;
+}
+  
+.resource {
+    flex-basis: 25%; /* 每个资源部分占据容器宽度的30% */
+    border: 1px solid #ddd; /* 根据设计，添加边框 */
+    padding: 25px; /* 添加内边距 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    border-radius: 4px; /* 圆角边框 */
+    background-color: #ffffff; /* 背景颜色 */
+    text-align: center; /* 文本居中 */
+}
+
+
+.centered-text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;       /* 设置容器宽度为50% */
+    margin: auto;     /* 自动边距会使容器水平居中 */
+    text-align: center; /* 文本居中 */
+}
+  
+.centered-text .heading {
+    margin-top: 50px;
+    margin: 0;
+    padding-bottom: 20px; /* 标题和内容之间的间距 */
+    font-size: 2.5em; /* 根据需求调整标题大小 */
+    
+}
+
+.centered-text .content {
+    margin: 0;
+    font-size: 1.3em; /* 根据需求调整内容文本大小 */
+    color: #504f4f;
+    text-align: left;
+    font-family: Calibri;
+    margin-bottom: 70px;
+}
+
+.centered-text2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;       /* 设置容器宽度为50% */
+    margin: auto;     /* 自动边距会使容器水平居中 */
+    text-align: center; /* 文本居中 */
+}
+  
+.centered-text2 .heading {
+    margin-top: 70px;
+    margin: 0;
+    padding-bottom: 20px; /* 标题和内容之间的间距 */
+    font-size: 2.5em; /* 根据需求调整标题大小 */
+    font-family: Calibri;
+}
+
+.centered-text2 .content {
+    margin: 0;
+    font-size: 1.3em; /* 根据需求调整内容文本大小 */
+    color: #504f4f;
+    text-align: left;
+    font-family: Calibri;
+    margin-bottom: 150px;
+}
